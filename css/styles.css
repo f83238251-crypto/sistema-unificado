@@ -4,15 +4,15 @@ form#contactForm button[type="submit"] {
   color: #fff !important;
   border-radius: 12px !important;
   width: 100% !important;
-  max-width: 220px !important;
-  min-width: 120px !important;
+  max-width: 400px !important;
+  min-width: 180px !important;
   height: 38px !important;
   font-size: 1rem !important;
   font-weight: 700 !important;
   box-shadow: 0 2px 12px rgba(14,165,164,0.13) !important;
   border: none !important;
   padding: 0 !important;
-  margin-top: 10px !important;
+  margin-top: 0 !important;
   display: block !important;
   letter-spacing: 1px !important;
   transition: box-shadow 0.2s, transform 0.2s !important;
