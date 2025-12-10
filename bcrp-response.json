@@ -1,0 +1,36 @@
+﻿
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {
+                    "config":
+                    {
+                    "title":"Índice del tipo de cambio real (var% mensual)",
+                    "series":
+                    [
+                    {
+                    "name":"Índice del tipo de cambio real (var% mensual) - 
+                    Multilateral",
+                    "dec":"1"
+                    },
+                    {
+                    "name":"Índice del tipo de ca...
+RawContent        : HTTP/1.1 200 OK
+                    Pragma: no-cache,no-cache
+                    X-XSS-Protection: 1; mode=block
+                    X-Content-Type-Options: nosniff
+                    X-WebKit-CSP: frame-ancestors 'self';
+                    X-Permitted-Cross-Domain-Policies: master-only
+                    Con...
+Forms             : {}
+Headers           : {[Pragma, no-cache,no-cache], [X-XSS-Protection, 1; 
+                    mode=block], [X-Content-Type-Options, nosniff], 
+                    [X-WebKit-CSP, frame-ancestors 'self';]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 2071
+
+
+
