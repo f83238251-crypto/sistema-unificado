@@ -1,4 +1,19 @@
+.btn-title {
+  /* ...existing code... */
+  scrollbar-width: none; /* Firefox */
+}
+.btn-title::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.scroll-title {
+  /* ...existing code... */
+  scrollbar-width: none; /* Firefox */
+}
+.scroll-title::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 /* Marquee effect for main button titles (INFRACCIONES, DOCUMENTACIÓN, PROPIEDAD) */
+/* Marquee effect for main button titles (más rápido e infinito) */
 .btn-title {
   overflow: hidden;
   white-space: nowrap;
@@ -10,16 +25,17 @@
   color: #0ea5a4;
   position: relative;
 }
+/* Marquee efecto infinito real para títulos de botones */
+/* Marquee efecto infinito real para títulos de botones, sin duplicado visual */
 .scroll-title {
   display: inline-block;
-  min-width: 100%;
   white-space: nowrap;
   vertical-align: middle;
-  animation: marquee-title 8s linear infinite;
+  animation: marquee-title 4s linear infinite;
 }
 @keyframes marquee-title {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 /* Marquee effect for main button titles */
 /* Marquee effect for main button titles (igual que subtítulos) */
