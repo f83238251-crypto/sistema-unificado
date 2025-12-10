@@ -799,19 +799,43 @@ select {
   }
 }
 
-[data-font="small"] {
-  --font-size: 15px;
+/* Botones PIT personalizados */
+.submenu-btn.pit-deuda, .submenu-btn.pit-foto, .submenu-btn.pit-captura {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 2rem auto;
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(120deg, #448C25 0%, #9DDDF9 100%);
+  color: #fff;
+  font-family: 'Roboto', 'Roboto Serif', serif;
+  font-size: 1.18rem;
+  font-weight: 700;
+  box-shadow: 0 8px 32px rgba(68,140,37,0.18), 0 2px 24px rgba(157,221,249,0.10);
+  border: none;
+  position: relative;
+  text-align: left;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
 }
-
-[data-font="medium"] {
-  --font-size: 18px;
+.submenu-btn.pit-deuda:hover, .submenu-btn.pit-foto:hover, .submenu-btn.pit-captura:hover {
+  box-shadow: 0 12px 40px rgba(68,140,37,0.22), 0 2px 24px rgba(157,221,249,0.13);
+  transform: translateY(-4px) scale(1.03);
+  background: linear-gradient(120deg, #448C25 10%, #9DDDF9 90%);
 }
-
-[data-font="large"] {
-  --font-size: 21px;
+.submenu-btn.pit-deuda b, .submenu-btn.pit-foto b, .submenu-btn.pit-captura b {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+  display: block;
 }
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px);}
-  to { opacity: 1; transform: translateY(0);}
+.submenu-btn.pit-deuda .desc, .submenu-btn.pit-foto .desc, .submenu-btn.pit-captura .desc {
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #f7f8fa;
+  opacity: 0.95;
+  margin-top: 0.2rem;
+  display: block;
 }
