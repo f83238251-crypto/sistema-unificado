@@ -1,3 +1,218 @@
+/* Marquee effect for main button titles (INFRACCIONES, DOCUMENTACIÓN, PROPIEDAD) */
+.btn-title {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0ea5a4;
+  position: relative;
+}
+.scroll-title {
+  display: inline-block;
+  min-width: 100%;
+  white-space: nowrap;
+  vertical-align: middle;
+  animation: marquee-title 8s linear infinite;
+}
+@keyframes marquee-title {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+/* Marquee effect for main button titles */
+/* Marquee effect for main button titles (igual que subtítulos) */
+.btn-title {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0ea5a4;
+  position: relative;
+}
+.scroll-title {
+  display: inline-block;
+  min-width: 100%;
+  white-space: nowrap;
+  vertical-align: middle;
+  animation: marquee-title 8s linear infinite;
+}
+/* Marquee effect for main page title, visible and sharp, sin desenfoque */
+.app-title {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #0ea5a4;
+  letter-spacing:2.5px;
+  position: relative;
+  background: none;
+  text-shadow: none;
+}
+.app-title span {
+  display: inline-block;
+  min-width: 100%;
+  white-space: nowrap;
+  vertical-align: middle;
+  animation: marquee-title 8s linear infinite;
+}
+.app-title {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #0ea5a4 20%, #14b8a6 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 12px rgba(14,165,164,0.18);
+  letter-spacing:2.5px;
+  position: relative;
+}
+.app-title span {
+  display: inline-block;
+  min-width: 100%;
+  white-space: nowrap;
+  vertical-align: middle;
+  animation: marquee-title 8s linear infinite;
+}
+
+/* Header nav links estáticos y centrados */
+.header-nav {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+.header-link {
+  display: inline-block;
+  min-width: max-content;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: #e0f7fa;
+  color: #0ea5a4;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.header-link:hover {
+  background: #14b8a6;
+  color: #fff;
+}
+/* Títulos de los botones principales estáticos */
+.btn-title {
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0ea5a4;
+}
+.scroll-title {
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+/* Título de botón principal siempre en una sola línea, centrado y sin saltos */
+.btn-title {
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  display: block;
+  overflow-x: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0ea5a4;
+}
+.scroll-title {
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+/* Header responsive: logo, título y nav uno debajo del otro en pantallas pequeñas */
+.header-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100vw;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+@media (min-width: 700px) {
+  .header-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .header-logo {
+    margin-bottom: 0 !important;
+    margin-right: 18px;
+  }
+  .app-title {
+    margin-bottom: 0 !important;
+    margin-right: 18px;
+    font-size: 2.2rem !important;
+  }
+  .header-nav {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Marquee effect for header nav links */
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  justify-content: center;
+}
+.header-link {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: #e0f7fa;
+  color: #0ea5a4;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.header-link:hover {
+  background: #14b8a6;
+  color: #fff;
+}
+
+/* Marquee effect for app-title */
+.app-title {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
 /* Botón de enviar del formulario de contacto */
 form#contactForm button[type="submit"] {
   background: linear-gradient(90deg,#0ea5a4 0%,#14b8a6 100%) !important;
@@ -422,7 +637,7 @@ select {
 }
 
 .main-content {
-  margin-top: 80px;
+  margin-top: 24px;
   margin-bottom: 70px;
   min-height: calc(100vh - 150px);
   animation: fadeInUp 0.5s cubic-bezier(.4,0,.2,1);
@@ -439,7 +654,7 @@ select {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.2rem;
-  margin: 3.5rem auto 0 auto;
+  margin: 1.2rem auto 0 auto;
   max-width: 900px;
 }
 
