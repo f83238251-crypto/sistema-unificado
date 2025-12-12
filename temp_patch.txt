@@ -1,0 +1,9 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  overflow-x: hidden;
+  padding-bottom: 0;
+  padding-top: 64px; /* Espacio para header fijo */
+}
