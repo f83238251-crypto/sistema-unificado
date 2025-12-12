@@ -3,35 +3,65 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0ea5a4" />
+  <meta name="description" content="Contacta con el equipo del Sistema Vehicular Unificado - Dudas, sugerencias y soporte" />
   <title>Ponte en Contacto - Sistema Vehicular Unificado</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 </head>
 <body>
-  <header class="app-header" style="background:rgba(255,255,255,0.96);border-bottom:2px solid #0ea5a4;box-shadow:0 4px 24px rgba(14,165,164,0.10);padding:18px 0 10px 0;display:flex;align-items:center;gap:12px;">
-    <button class="back-btn" onclick="window.location.href='index.html'" aria-label="Volver" style="background: linear-gradient(135deg, #e0f7fa 80%, #fff 100%); border: none; box-shadow: 0 2px 8px rgba(14,165,164,0.10); border-radius: 50px; padding: 8px 18px; display: flex; align-items: center; gap: 8px; font-size: 1.1rem; color: #0ea5a4; font-weight: 700; transition: box-shadow 0.2s, background 0.2s;">
-      <svg width="24" height="24" fill="none"><path d="M15 6l-6 6 6 6" stroke="#0ea5a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <h1 class="app-title" style="font-size:2rem;font-weight:900;color:#0ea5a4;letter-spacing:1.5px;margin:0;text-align:left;font-family:'Roboto',Arial,sans-serif;text-shadow:0 2px 12px rgba(14,165,164,0.10);background:linear-gradient(90deg,#0ea5a4 20%,#14b8a6 80%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Ponte en Contacto</h1>
+  <header class="app-header material-header">
+    <div class="header-logos-marquee">
+      <div class="header-logos-scroll">
+        <img src="recursos/satlima_100.png" alt="SAT Lima" height="28" />
+        <img src="recursos/satcallao_100.png" alt="SAT Callao" height="28" />
+        <img src="recursos/sunarp_100.png" alt="SUNARP" height="28" />
+        <img src="recursos/sutran_100.png" alt="SUTRAN" height="28" />
+        <img src="recursos/atu_100.png" alt="ATU" height="28" />
+        <img src="recursos/pnp_100.png" alt="PNP" height="28" />
+        <img src="recursos/sbs_100.png" alt="SBS" height="28" />
+        <img src="recursos/sunat_100.png" alt="SUNAT" height="28" />
+        <img src="recursos/minister_100.png" alt="Ministerio" height="28" />
+        <img src="recursos/satlima_100.png" alt="SAT Lima" height="28" />
+        <img src="recursos/satcallao_100.png" alt="SAT Callao" height="28" />
+        <img src="recursos/sunarp_100.png" alt="SUNARP" height="28" />
+        <img src="recursos/sutran_100.png" alt="SUTRAN" height="28" />
+        <img src="recursos/atu_100.png" alt="ATU" height="28" />
+        <img src="recursos/pnp_100.png" alt="PNP" height="28" />
+        <img src="recursos/sbs_100.png" alt="SBS" height="28" />
+        <img src="recursos/sunat_100.png" alt="SUNAT" height="28" />
+        <img src="recursos/minister_100.png" alt="Ministerio" height="28" />
+      </div>
+    </div>
   </header>
-  <main class="main-content" style="display:flex;justify-content:center;align-items:center;min-height:80vh;background:#f8fafc;">
-    <form id="contactForm" style="background:#fff;border-radius:24px;box-shadow:0 4px 24px rgba(14,165,164,0.13);padding:40px 32px 32px 32px;margin-top:24px;display:flex;flex-direction:column;gap:22px;max-width:400px;width:100%;">
-      <div style="background:#e0f7fa;border-radius:8px;padding:10px 14px;margin-bottom:10px;color:#0ea5a4;font-size:1rem;font-weight:500;text-align:center;">
+  
+  <button class="fab-back" onclick="window.location.href='index.html'" aria-label="Volver">
+    <span class="material-symbols-outlined">arrow_back</span>
+  </button>
+  <main class="main-content contact-content">
+    <form id="contactForm" class="md-card md-form">
+      <div class="md-info">
         Tu información está segura y respaldada en Google Firebase. Solo se usa para responder tu consulta.
       </div>
-      <label for="nombre" style="color:#0ea5a4;font-weight:700;font-size:1.15rem;margin-bottom:6px;">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required style="padding:12px 14px;border-radius:10px;border:1.5px solid #0ea5a4;background:#f7f8fa;font-size:1.08rem;">
-      <label for="correo" style="color:#0ea5a4;font-weight:700;font-size:1.15rem;margin-bottom:6px;">Correo electrónico</label>
-      <input type="email" id="correo" name="correo" required style="padding:12px 14px;border-radius:10px;border:1.5px solid #0ea5a4;background:#f7f8fa;font-size:1.08rem;">
-      <label for="mensaje" style="color:#0ea5a4;font-weight:700;font-size:1.15rem;margin-bottom:6px;">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required style="padding:12px 14px;border-radius:10px;border:1.5px solid #0ea5a4;background:#f7f8fa;font-size:1.08rem;resize:vertical;"></textarea>
-      <button type="submit" class="main-btn minimalist-btn" style="align-self:center;width:100%;max-width:400px;height:48px;font-size:1.15rem;border-radius:12px;background:linear-gradient(90deg,#0ea5a4 0%,#14b8a6 100%);color:#fff;border:none;box-shadow:0 2px 12px rgba(14,165,164,0.13);padding:0 0;letter-spacing:1px;font-weight:700;transition:box-shadow 0.2s,transform 0.2s;display:block;margin-top:10px;">
-        <span style="font-size:1.12rem;">Enviar</span>
+      <!-- Honeypot anti-bot: no rellenar -->
+      <input type="text" id="hp_website" name="website" class="hp-field" tabindex="-1" aria-hidden="true" autocomplete="off" />
+      <label for="nombre" class="md-label">Nombre</label>
+      <input type="text" id="nombre" name="nombre" class="md-input" required placeholder="Tu nombre" minlength="2" maxlength="80" />
+      
+      <label for="correo" class="md-label">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" class="md-input" required placeholder="tucorreo@ejemplo.com" maxlength="120" />
+      
+      <label for="mensaje" class="md-label">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" class="md-textarea" required placeholder="Cuéntanos en qué podemos ayudarte" maxlength="1000"></textarea>
+      
+      <button type="submit" id="sendBtn" class="md-button primary full">
+        Enviar
       </button>
-      <div id="formStatus" style="margin-top:10px;font-weight:600;color:#0ea5a4;text-align:center;"></div>
+      <div id="formStatus" class="md-status"></div>
     </form>
   </main>
   <footer class="footer"></footer>
@@ -47,23 +77,65 @@
       appId: "1:524876781374:web:1bf219ae6081eb3c9f3e6f",
       measurementId: "G-XEH674PFWG"
     };
-    firebase.initializeApp(firebaseConfig);
+    // Inicialización segura (evita doble init si el script se carga 2 veces)
+    try { if (!firebase.apps.length) { firebase.initializeApp(firebaseConfig); } } catch(e) {}
     const db = firebase.database();
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+
+    const form = document.getElementById('contactForm');
+    const statusEl = document.getElementById('formStatus');
+    const sendBtn = document.getElementById('sendBtn');
+
+    form.addEventListener('submit', function(e) {
       e.preventDefault();
+      // Honeypot
+      const hp = document.getElementById('hp_website').value;
+      if (hp) { return; } // Bot detectado: abortar silenciosamente
+
       const nombre = document.getElementById('nombre').value.trim();
       const correo = document.getElementById('correo').value.trim();
       const mensaje = document.getElementById('mensaje').value.trim();
-      if (!nombre || !correo || !mensaje) return;
-      db.ref('contacto').push({ nombre, correo, mensaje, fecha: new Date().toISOString() })
+
+      // Validación simple
+      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo);
+      if (!nombre || !emailOk || !mensaje) {
+        statusEl.textContent = 'Por favor, completa los campos correctamente.';
+        return;
+      }
+
+      // UI estado
+      sendBtn.disabled = true; sendBtn.setAttribute('aria-busy','true'); statusEl.textContent = 'Enviando...';
+
+      db.ref('contacto/messages').push({ nombre, correo, mensaje, createdAt: firebase.database.ServerValue.TIMESTAMP })
         .then(() => {
-          document.getElementById('formStatus').innerText = '¡Mensaje enviado correctamente!';
-          document.getElementById('contactForm').reset();
+          statusEl.textContent = '¡Mensaje enviado correctamente!';
+          form.reset();
         })
         .catch(() => {
-          document.getElementById('formStatus').innerText = 'Error al enviar. Intenta nuevamente.';
+          statusEl.textContent = 'Error al enviar. Intenta nuevamente.';
+        })
+        .finally(() => {
+          sendBtn.disabled = false; sendBtn.removeAttribute('aria-busy');
         });
     });
   </script>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item">
+      <span class="material-symbols-outlined">home</span>
+      <span class="nav-label">Inicio</span>
+    </a>
+    <a href="acerca.html" class="nav-item">
+      <span class="material-symbols-outlined">info</span>
+      <span class="nav-label">Acerca</span>
+    </a>
+    <a href="privacidad.html" class="nav-item">
+      <span class="material-symbols-outlined">privacy_tip</span>
+      <span class="nav-label">Privacidad</span>
+    </a>
+    <a href="contacto.html" class="nav-item nav-item-active">
+      <span class="material-symbols-outlined">contact_support</span>
+      <span class="nav-label">Contacto</span>
+    </a>
+  </nav>
 </body>
 </html>
