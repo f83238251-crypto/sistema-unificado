@@ -992,6 +992,13 @@ select {
 .doc-btn.ruc {
   background: linear-gradient(90deg, #B0112D 0%, #034694 100%);
 }
+/* NUEVOS BOTONES GAS */
+.doc-btn.gas {
+  background: linear-gradient(90deg, #FF6B35 0%, #004E89 100%);
+}
+.doc-btn.gas-fise {
+  background: linear-gradient(90deg, #1AA260 0%, #005F73 100%);
+}
 .submenu-btn.sat-lima {
   background: linear-gradient(90deg, #16236E 0%, #149CD7 100%);
 }
@@ -1018,6 +1025,16 @@ select {
 }
 .submenu-btn.lunas {
   background: linear-gradient(90deg, #104938 0%, #B59E6A 100%);
+}
+/* NUEVOS BOTONES SAT */
+.submenu-btn.sat-nacional {
+  background: linear-gradient(90deg, #0F4C75 0%, #3282B8 100%);
+}
+.submenu-btn.sat-captura-nacional {
+  background: linear-gradient(90deg, #1B3D6F 0%, #2E5090 100%);
+}
+.submenu-btn.sutran-verifica {
+  background: linear-gradient(90deg, #1A4B63 0%, #2B5F7F 100%);
 }
 
 /* Mejorar contraste de subtítulos */
@@ -1081,6 +1098,10 @@ select {
 .prop-btn.sbs { background: linear-gradient(90deg, #002469 0%, #01C4B3 100%); }
 .prop-btn.precio { background: linear-gradient(90deg, #75AD45 0%, #00A7A4 100%); }
 .prop-btn.historial, .prop-btn.seguimiento, .prop-btn.alerta, .prop-btn.tive { background: linear-gradient(90deg, #8ABE2E 0%, #2B2A29 100%); }
+/* NUEVOS BOTONES SUV */
+.prop-btn.suv-placa { background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%); }
+.prop-btn.suv-duenos { background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); }
+.prop-btn.suv-cambio { background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%); }
 
 .city-btn {
   display: block;
@@ -1144,6 +1165,15 @@ select {
 .city-btn.huanuco { background: linear-gradient(90deg, #CC5500 0%, #006400 100%); }
 .city-btn.chiclayo { background: linear-gradient(90deg, #FFD700 0%, #8B4513 100%); }
 .city-btn.chachapoyas { background: linear-gradient(90deg, #8FBC8F 0%, #B07B57 100%); }
+/* NUEVAS CIUDADES */
+.city-btn.piura-sat { background: linear-gradient(90deg, #FFD700 0%, #FF8C00 100%); }
+.city-btn.tarapoto { background: linear-gradient(90deg, #228B22 0%, #90EE90 100%); }
+.city-btn.tacna { background: linear-gradient(90deg, #4169E1 0%, #87CEEB 100%); }
+.city-btn.andahuaylas { background: linear-gradient(90deg, #DC143C 0%, #FF6347 100%); }
+.city-btn.huancayo { background: linear-gradient(90deg, #8B008B 0%, #DA70D6 100%); }
+.city-btn.pucallpa { background: linear-gradient(90deg, #FF4500 0%, #FFD700 100%); }
+.city-btn.trujillo { background: linear-gradient(90deg, #20B2AA 0%, #48D1CC 100%); }
+.city-btn.huanuco-sat { background: linear-gradient(90deg, #CD5C5C 0%, #F08080 100%); }
 
 @media (max-width: 600px) {
   .app-header {
